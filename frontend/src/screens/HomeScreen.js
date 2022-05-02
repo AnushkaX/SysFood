@@ -12,7 +12,7 @@ const HomeScreen = () => {
             <Header />
             <ShopSection />
             <CalltoActionSection />
-            <ContactInfo />
+            {/* <ContactInfo /> */}
             <Footer />
         </div>
     );

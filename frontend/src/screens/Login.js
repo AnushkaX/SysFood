@@ -1,0 +1,23 @@
+import React from "react";
+import {Link} from "react-router-dom";
+import Header from "../components/Header";
+
+const Login = () => {
+    return (
+        <>
+        <Header />
+        <div className="container d-flex flex-column justify-content-center allign-item-center">
+            <form className="Login col-md-8 col-lg-4 col-11">
+                <input type="email" placeholder="Email"></input>
+                <input type="password" placeholder="Password"></input>
+                <button type="submit">Login</button>
+                <p>
+                    <Link to={"/register"}>Create Account</Link>
+                </p>
+            </form>
+        </div>
+        </>
+    );
+};
+
+export default Login;

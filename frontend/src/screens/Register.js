@@ -13,7 +13,7 @@ const Register = () => {
                 <input type="password" placeholder="Password"></input>
                 <button type="submit">Register</button>
                 <p>
-                    <Link to={"/register"}>Already have an Account?</Link>
+                    <Link to={"/login"}>Already have an Account?</Link>
                 </p>
             </form>
         </div>

@@ -14,7 +14,7 @@ const ShopSection = () => {
                             {products.map((product) => (
                              <div className="shop col-lg-4 col-md-6 col-sm-6" key={product._id}>
                                  <div className="border-product">
-                                     <Link to={`/products/${product._id}`}>
+                                     <Link to={"/login"}>
                                          <div className="shopBack">
                                              <img src={product.image} alt={product.name}></img>
                                          </div>

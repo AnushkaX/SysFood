@@ -8,6 +8,7 @@ import Footer from "./../components/Footer";
 const HomeScreen = () => {
     window.scrollTo(0, 0);
     return (
+        
         <div>
             <Header />
             <ShopSection />

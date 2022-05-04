@@ -1,21 +1,26 @@
 import logo from './logo.svg';
 import './App.css';
+import React, { Component } from 'react';
 import HomeScreen from "./screens/HomeScreen";
 import Login from './screens/Login';
 import Register from './screens/Register';
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Routes,
+  Route,
+  Link
+} from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-const App = () => {
+export default function App() {
   return (
     <Router>
-      <Switch>
-        <Route path = "/" component={HomeScreen} exact />
-        <Route path = "/login" component={Login} exact />
-        <Route path = "/register" component={Register} exact />
-      </Switch>
+      <Routes>
+        <Route path="/" element={<HomeScreen />}></Route>
+        <Route path="/login" element={<Login />}></Route>
+        <Route path="/register" element={<Register />}></Route>
+      </Routes>
     </Router>
   );
 }
-
-export default App;
